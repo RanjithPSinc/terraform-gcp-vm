@@ -1,6 +1,6 @@
 # main.tf - Provider Configuration
 provider "google" {
-  credentials = file(var.credentials_file_path)
+  credentials = file(var.credentials_file_path) #Configured credentials_file_path in terraform.tfvars
   project     = var.project_id
   region      = var.region
   zone        = var.zone
